@@ -10,6 +10,6 @@ Console.WriteLine(result);
 
 int FindSecondNumber(int number)
 {
-    int secondDigit = number % 100 / 10;
+    int secondDigit = ((number / 10) % 10);
     return secondDigit;
 }
