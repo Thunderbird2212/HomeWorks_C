@@ -5,10 +5,10 @@
 int a = new Random().Next(100, 1000);
 Console.WriteLine(a);
 
-int result = FindSecondNumber(a);
+int result = FindSecondDigit(a);
 Console.WriteLine(result);
 
-int FindSecondNumber(int number)
+int FindSecondDigit(int number)
 {
     int secondDigit = (number / 10 % 10);
     return secondDigit;
