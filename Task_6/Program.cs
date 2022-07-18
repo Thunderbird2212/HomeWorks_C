@@ -4,14 +4,19 @@
 //32679 -> 6
 Console.WriteLine("Enter your number ");
 int number = int.Parse(Console.ReadLine());
-
-if (number > 99)
+if (number < 100)
 {
-Console.WriteLine((number / 100) % 10);
+    Console.WriteLine("No third digit");
 }
 else
 {
-Console.WriteLine("No third digit");
+    while (number > 999)
+    {
+        number = number / 10;
+        Console.WriteLine(number);
+    }
+    number = number % 10;
+    Console.WriteLine("Third digit: " + number);
 }
 
 
